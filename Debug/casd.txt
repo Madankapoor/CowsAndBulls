@@ -1,0 +1,60 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+        t;
+        cin >> t;
+        while(t--)
+        {
+            
+            int n;
+            
+            bool A[1001][1001];
+           // bool X[1001][1001];
+            bool graph[1001][1001]={false};
+            bool y[1001]={false};
+            cin >> n;
+            
+            for(int i=0;i<n;i++)
+                for(int j=0;j<n;j++)
+                    cin >> Grid[i][j];
+            
+            for(int i=0;i<n;i++)
+                for(int j=0;j<n;j++)
+                    {
+                        if(A[i][j]==1)
+                            {
+                               // X[i][j]=1;
+                                if(i==j) {printf("-1\n"); goto end;}
+                                graph[i][j]=true;
+                                graph[j][i]=true;
+                                
+                            }
+                    }
+            
+            //Graphing 
+             for(int i=0;i<n;i++)
+                for(int j=0;j<n;j++)
+                    {
+                        if(graph[i][j])
+                        {
+                            y[j]=!y[i];
+                            
+                        }
+                    }        
+            
+            for(int i=0;i<n;i++)
+                cout << y[i] << " ";
+                cout << endl;
+            
+            end:
+            
+        }
+    
+    
+    
+    
+    
+    	return 0;
+}
