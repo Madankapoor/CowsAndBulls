@@ -9,8 +9,8 @@ Please send me a email at "madankapoor10@gmail.com" and I will send the binaries
 2. CSS3
 
 ## Tools Used to Develop
-3. Glade
-4. Codelite
+1. Glade
+2. Codelite 
 
 
 
